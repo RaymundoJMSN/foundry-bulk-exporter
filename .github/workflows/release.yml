@@ -1,0 +1,47 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - name: Patch module.json version + download URL
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          TAG="${GITHUB_REF_NAME}"
+          REPO="${{ github.repository }}"
+          jq \
+            --arg ver "$VERSION" \
+            --arg dl "https://github.com/$REPO/releases/download/$TAG/module.zip" \
+            '.version = $ver | .download = $dl' \
+            module.json > module.patched.json
+          mv module.patched.json module.json
+
+      - name: Package ZIP
+        run: zip -r module.zip module.json dist/ src/lang/
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_notes: true
+          files: |
+            module.json
+            module.zip
