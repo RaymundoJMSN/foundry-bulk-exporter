@@ -1,0 +1,8 @@
+{
+  "FBE.ModuleTitle": "Foundry Bulk Exporter",
+  "FBE.UI.ExportFolderZip": "Exportar pasta (ZIP)",
+  "FBE.UI.ExportCompendiumZip": "Exportar compêndio (ZIP)",
+  "FBE.Notify.ExportingFolder": "Compactando \"{name}\"…",
+  "FBE.Notify.ExportedFolder": "Pasta \"{name}\" exportada.",
+  "FBE.Notify.ExportFolderFailed": "Falha ao exportar pasta: {error}"
+}

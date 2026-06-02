@@ -1,0 +1,8 @@
+{
+  "FBE.ModuleTitle": "Foundry Bulk Exporter",
+  "FBE.UI.ExportFolderZip": "Export folder (ZIP)",
+  "FBE.UI.ExportCompendiumZip": "Export compendium (ZIP)",
+  "FBE.Notify.ExportingFolder": "Zipping \"{name}\"…",
+  "FBE.Notify.ExportedFolder": "Folder \"{name}\" exported.",
+  "FBE.Notify.ExportFolderFailed": "Folder export failed: {error}"
+}

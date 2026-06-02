@@ -1,0 +1,33 @@
+{
+  "id": "foundry-bulk-exporter",
+  "title": "Foundry Bulk Exporter",
+  "description": "Right-click any folder or compendium pack to download its documents as a ZIP archive, mirroring the folder hierarchy.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13",
+    "maximum": "13"
+  },
+  "authors": [
+    {
+      "name": "Yuri Lupalina",
+      "email": "yuri@lupalina.com.br"
+    }
+  ],
+  "esmodules": ["dist/module.js"],
+  "languages": [
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "src/lang/pt-BR.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "src/lang/en.json"
+    }
+  ],
+  "url": "https://github.com/RaymundoJMSN/foundry-bulk-exporter",
+  "license": "LICENSE",
+  "readme": "README.md"
+}
