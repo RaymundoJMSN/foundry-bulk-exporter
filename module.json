@@ -2,7 +2,7 @@
   "id": "foundry-bulk-exporter",
   "title": "Foundry Bulk Exporter",
   "description": "Right-click any folder or compendium pack to download its documents as a ZIP archive, mirroring the folder hierarchy.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "compatibility": {
     "minimum": "13",
     "verified": "13",
@@ -29,7 +29,7 @@
   ],
   "url": "https://github.com/RaymundoJMSN/foundry-bulk-exporter",
   "manifest": "https://github.com/RaymundoJMSN/foundry-bulk-exporter/releases/latest/download/module.json",
-  "download": "https://github.com/RaymundoJMSN/foundry-bulk-exporter/releases/download/v0.1.0/module.zip",
+  "download": "https://github.com/RaymundoJMSN/foundry-bulk-exporter/releases/download/v0.1.1/module.zip",
   "license": "LICENSE",
   "readme": "README.md"
 }
